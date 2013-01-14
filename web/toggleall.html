@@ -13,17 +13,7 @@ BSD-style license that can be found in the LICENSE file.
            checked="{{allChecked}}" data-action="click:markAll">
     <label for="x-toggle-all"></label>
   </template>
-  <script type="application/dart">
-  import 'model.dart';
-  import 'package:web_components/web_component.dart';
-
-  class ToggleComponent extends WebComponent {
-    bool get allChecked => app.todos.length > 0 &&
-        app.todos.every((t) => t.done);
-
-    void markAll(e) => app.todos.forEach((t) { t.done = _toggleAll.checked; });
-  }
-  </script>
+  <script type="application/dart" src='toggleall.dart'></script>
 </element>
 </body>
 </html>

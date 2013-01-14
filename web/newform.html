@@ -15,21 +15,7 @@ BSD-style license that can be found in the LICENSE file.
              data-action="change:addTodo">
     </form>
   </template>
-  <script type="application/dart">
-  import 'model.dart';
-  import 'package:web_components/web_component.dart';
-  import 'package:objectory/objectory.dart';
-  class FormComponent extends WebComponent {
-    void addTodo(e) {
-      e.preventDefault(); // don't submit the form
-      if (_newTodo.value == '') return;
-      var todo = new Todo(_newTodo.value);
-      app.todos.add(todo);
-      objectory.save(todo);
-      _newTodo.value = '';
-    }
-  }
-  </script>
+  <script type="application/dart" src='newform.dart'></script>
 </element>
 </body>
 </html>

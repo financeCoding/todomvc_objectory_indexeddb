@@ -3,3 +3,4 @@ _*.dart
 _*.html
 
 /pubspec.lock
+.buildlog
